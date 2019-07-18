@@ -7,17 +7,17 @@ html {
     background-color: #d8da3d;
     font-family:Courier;
   }
-  ul{
+  div{
     list-style: none;
     border-style: double;
     border-color: #98bf21;
     word-wrap: break-word;
   }
-  ul.navbar li{
+  div.navbar li{
     background: white;
   }
-  u1.navbar a{
-    background: dodgerblue;
+  div.navbar a{
+    background:powderblue;
   }
   a:hover{
     color: red;
@@ -26,52 +26,54 @@ html {
     text-align: right;
     color: blue;
   }
+  a:Right{
+      text-align:right;
+    }
   h1,h2,h3 {
     font-family: Helvetica, Geneva, Arial,
     SunSans-Regular, sans-serif;
     }
-    img {
+  img {
       border-radius: 100%;
     }
-    p em {font-size: larger;}
-    p:hover {border: 1px solid #0c0;}
-    * {
-   color: green;
-   font-size: 20px;
+  p em {font-size: larger;}
+  p:hover {border: 1px solid #0c0;}
+  * {
+    color: green;
+    font-size: 20px;
     line-height: 25px;
     }
-    #container{
-      width: 960px;
-      margin: 0 auto;
+  #container{
+    width: 960px;
+    margin: 0 auto;
     }
-    input[type="text"]{
+  input[type="text"]{
       background-color: #ddd;
       width: 200px;
     }
-    .container:before {
-   content: "";
-   display: block;
-   width: 50px;
-   height: 50px;
-   background-color: #141414;
+  .container:before {
+     content: "";
+     display: block;
+     width: 50px;
+     height: 50px;
+     background-color: #141414;
     }
-    p.one{
+  p.one{
       border-style:inset;
       border-width:medium;
       border-color: yellow;
     }
-    p.two{
+  p.two{
       border-style: outset;
       border-width:1px;
       border-color: #98bf21;
     }
-
-    p.three{
+  p.three{
       border-style: dashed;
       border-width:3px;
       border-color: #ddd;
     }
-    img.trans{
+  img.trans{
       opacity: 0.4;
       float : left;
       border-radius: 0;
