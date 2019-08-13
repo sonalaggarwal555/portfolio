@@ -1,35 +1,87 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Html & CSS Projects</title>
-  </head>
-  <body>
-    <link href="stylesheet.css" rel="stylesheet" type="text/css">
-    <div>
-      Page1
-      <a href="AboutMe.html">About Me</a>
-      <h2 style="font-family:verdana;text-align:center;"><u>My Projects in Html</u></h2>
-    </div>
-    <div class="navbar">
-    <a href="https://github.com/sonalaggarwal555/semantic-elements/blob/master/index.html">
-    <img src="images/flower1.jpeg" alt="Project-1 Index.html" width="50" height="50">Project-1 Lesson01 Assignment</a><br/>
-    <a href="https://github.com/sonalaggarwal555/semantic-elements/blob/master/semantic-elements.html">
-    <img src="images/flower2.jpeg" alt="Project-2 Index.html" width="50" height="50">Project-2 Semantic Elements</a><br/>
-    <a href="https://github.com/sonalaggarwal555/semantic-elements/blob/master/sectioning-elements.html">
-      <img src="images/flower3.jpeg" alt="Project-2 Index.html" width="50" height="50">Project-3 Sectioning-Elements</a><br/>
-    <a href="https://github.com/sonalaggarwal555/semantic-elements/blob/master/images.html">
-      <img src="images/flower4.jpg" alt="" width="50" height="50">Project-4 Images</a><br/>
-    <a href="#">
-      <img src="images/flower5.jpeg" alt="" width="50" height="50">Project-5</a><br/>
-    <a href="#">
-      <img src="images/image1.jpg" alt="" width="50" height="50">Project-6</a><br/>
-    <a href="#">
-      <img src="images/image2.jpg" alt="" width="50" height="50">Project-7</a>
-    </div>
-    <footer>
-      <p>Assignment Porfolio</p>
-    </footer>
-  </body>
+<!DOCType html>
+<html>
+<head>
+  <title>Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+  <link href="stylesheet.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <div class="navbar">
+    <a href="#"><i class="fa fa-home" alt="Home"></i></a>
+    <a href="#"><i class="fa fa-edit"></i></a>
+    <a href="#"><i class="fa fa-info-circle"></i></a>
+    <a href="AboutMe.html">About Me >></a>
+  </div>
 
+  <!-- Flexible grid content-->
+  <div class="row">
+    <div class="side">
+
+      <div style="height:100px;">
+        <img src="images/my-image.jpg" style="border-radius:100%;width:200px;">
+      </div><br>
+      <div>
+      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+      <h3>More Text</h3>
+      <p>Lorem ipsum dolor sit ame.</p>
+    </div>
+      <div class="sidebar"><i class="fa fa-plus-square-o"></i> Add Project</div><br>
+      <div class="sidebar"><i class="fa fa-cogs"></i> Settings</div><br>
+      <div class="sidebar"><i class="fa fa-comments"></i> Comments</div>
+    </div>
+
+    <div class="main">
+      <div class="card">
+        <img src="images/image3.jpg" width="250px">
+        <h2>Project-1</h2>
+        <h2>
+          <a href="https://github.com/sonalaggarwal555/semantic-elements/blob/master/index.html">
+            Lesson01 Basic Html</a>
+        </h2>
+      </div><br>
+
+      <div class="card">
+        <img src="images/image4.jpg">
+        <h2>Project-2</h2>
+        <h2><a href="https://github.com/sonalaggarwal555/semantic-elements/blob/master/semantic-elements.html">
+          Semantic Elements
+        </a></h2>
+      </div><br>
+
+      <div class="card" style="height:200px;">
+        <img src="images/image5.png" alt="" width="100" height="100">
+        <h2>Project-3</h2>
+        <h2><a href="https://github.com/sonalaggarwal555/semantic-elements/blob/master/sectioning-elements.html">
+          Sectioning Elements</a>
+        </h2>
+      </div><br>
+
+      <div class="card" style="height:200px;">
+        <img src="images/image2.jpg" alt="" width="100" height="100">
+        <h2>Project-4</h2>
+        <h2><a href="https://github.com/sonalaggarwal555/semantic-elements/blob/master/images.html">
+          Images</a>
+        </h2>
+      </div><br>
+
+      <div class="card" style="height:200px;">
+        <img src="images/image1.jpg" alt="" width="100" height="100">
+        <h2>Project-5</h2>
+        <h2><a href="#">Title description</a></h2>
+      </div>
+
+  </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <h2>Footer</h2>
+    <i class="fa fa-calendar"></i>
+    <i class="fa fa-download"></i>
+    <i class="fa fa-print"></i>
+  </div>
+</body>
 </html>
