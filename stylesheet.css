@@ -22,10 +22,9 @@ body{
   text-decoration: none;
 }
 .container{
-  display:flex ;
   flex-direction: row;
   justify-content:space-between;
-  height:200px
+  height:200px;
 }
 .row{
   display:flex;
@@ -38,11 +37,22 @@ body{
 }
 .main{
   flex: 70%;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  background-color: white;
-  padding: 20px;
-  font-family: 'Indie Flower', cursive;
+}
+.column{
+  float:left;
+  padding: 10px;
+  font-family: cursive;
+}
+.card{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  height:300px;
+  width :300px;
+  transition: width 2s, height 4s;
+  -webkit-transition: width 2s, height 4s;
+}
+.card:hover{
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.5);
+  border: 2px solid yellow;
 }
 .fakeimg{
   background-color: #aaa;
@@ -60,14 +70,22 @@ body{
   text-align: center;
   background: #ddd;
 }
-.card{
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  height:250px;
-  width : 250px;
-}
+
 img{
   width:100%;
 }
 h2{
   margin-top: 0px;
 }
+.transition{
+  width: 130px;
+  transition: width 2s;
+  -webkit-transition: width 2s;
+}
+.transition:hover{
+  width: 300px;
+}
+p:nth-of-type(2){
+  font-family: cursive;
+  color: lime;
+  }

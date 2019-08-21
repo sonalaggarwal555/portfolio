@@ -38,15 +38,24 @@ body{
 }
 .main{
   flex: 70%;
-  background-color: white;
+}
+.column{
+  float:left;
+  padding: 10px;
+}
+.card{
   padding: 10px 10px;
-  padding-left: 42px;
   border: 1px solid;
-  height: 200px;
-  box-shadow: 5px 10px 8px 10px #888888;
+  box-shadow: 0 4px 8px 0 #888888;
   border-radius: 25px;
   margin-top: 10px;
-  font-family: 'Indie Flower',cursive;
+  font-family: cursive;
+  background-color: #f1f1f1;
+  transition:2s;
+}
+.card:hover{
+  border: 2px solid yellow;
+  box-shadow: 10px 10px 10px 10px #888888;
 }
 .fakeimg{
   background-color: #aaa;
@@ -60,7 +69,21 @@ body{
   border: 1px solid;
 }
 .footer{
+  flex:100%;
   padding: 20px;
   text-align: center;
   background: #ddd;
+}
+
+p:nth-of-type(2){
+  font-family:cursive;
+  color: lime;
+}
+.transition{
+  width:100px;
+  transition:width 2s;
+  -webkit-transition: width 2s;
+}
+.transition:hover{
+  width:300px;
 }
