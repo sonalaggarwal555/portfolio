@@ -21,15 +21,9 @@ body{
   text-align:center;
   text-decoration: none;
 }
-.container{
-  display:flex ;
-  flex-direction: row;
-  justify-content:space-between;
-  height:200px
-}
 .row{
-  display:flex;
-  flex-wrap: wrap;
+  display: flex;
+  flex-flow: row wrap;
 }
 .side{
   flex:30%;
@@ -67,6 +61,11 @@ body{
   height:60px;
   padding:20px;
   border: 1px solid;
+  transition : 1s;
+}
+.sidebar:hover{
+  border: 2px solid;
+  box-shadow: 5px 5px 5px 5px #c8d2d2;
 }
 .footer{
   flex:100%;
@@ -86,4 +85,9 @@ p:nth-of-type(2){
 }
 .transition:hover{
   width:300px;
+}
+.profile-img{
+  border-radius:100%;
+  border:1px solid lime;
+  width:230px;
 }

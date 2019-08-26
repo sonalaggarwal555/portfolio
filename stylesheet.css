@@ -64,6 +64,11 @@ body{
   height:60px;
   padding:20px;
   border: 1px solid;
+  transition : 1s;
+}
+.sidebar:hover{
+  border:2px solid;
+  border-shadow: 5px 5px 5px 5px #c8d2d2;
 }
 .footer{
   padding: 20px;
@@ -89,3 +94,9 @@ p:nth-of-type(2){
   font-family: cursive;
   color: lime;
   }
+.profile-img{
+  border-radius:100%;
+  width:230px;
+  border:1px solid lime;
+  height:170px;
+}
