@@ -42,7 +42,6 @@ nav{
     width:33.33%;
 }
 .main-container{
-  background-color:#fcfce0;
   height:100%;
   padding:20px;
 }
@@ -70,4 +69,28 @@ nav{
   background-color: white;
   border: 2px solid #c3c3ce82;
   box-shadow:2px 2px 5px 0px #261f1f;
+  font-family: 'Lobster', cursive;
+}
+footer{
+  display: flex;
+  height:50px;
+  width:100%;
+}
+footer ul{
+  margin:auto;
+}
+footer ul li{
+  list-style: none;
+  margin: 0 5px;
+  float:left;
+}
+footer ul li a{
+  display:block;
+  background: #262626;
+  color:#fff;
+  width:30px;
+  height:30px;
+  line-height: 30px;
+  text-align: center;
+
 }
