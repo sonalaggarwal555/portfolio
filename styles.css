@@ -1,16 +1,19 @@
 body{
   display:contents;
 }
-a{
-  color:white;
-  text-align: center;
-}
 nav{
   background-color:#bef5be;
   display:flex;
 }
+nav a{
+  color:white;
+  text-align: center;
+}
 h4{
+  color:black;
   padding: 10px;
+  font-size: 25px;
+  font-family: 'Pacifico', cursive;
 }
 header{
   height:100px;
