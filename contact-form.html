@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <title>Contact Form</title>
+</head>
+<style>
+body{
+	display:block;
+  background-color:aliceblue;
+}
+button,input,select,textarea{
+	font-family:Arial;
+  font-size:15px;
+  box-sizing:border-box;
+}
+input{
+border-radius:4px;
+}
+input[type=submit]{
+width:100%;
+background-color:#cc9da;
+}
+input[type=password]:focus{
+	background-color:#ddd;
+  outline:none;
+}
+fieldset{
+}
+</style>
+<body>
+  <!-- header -->
+  <div class="cover-page">
+    <header>
+      <img src="images/pic.jpg" class="profile-pic" alt="pic">
+      <h3><em>Sonal</em></h3>
+    </header>
+  </div>
+
+  <!-- Nav Bar-->
+  <nav>
+    <a href="index.html" class="tablink">Home</a>
+    <a href="aboutme.html" class="tablink" >About Me</a>
+    <a href="contact-form.html" class="tablink" style="background-color:#f44336;">Contact</a>
+  </nav>
+
+<form action="/action_page.php">
+<fieldset>
+<legend>Contact Form</legend>
+<p>First name:<input type="text" name="firstname" value=""></p>
+<p>E-mail: <input type="email" name="emailaddress"></p>
+<p>Telephone: <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required></p>
+<p>Date of Birth: <input type="date" name="bday"></p>
+<p>Please select your gender:<br/>
+   <input type="radio" name="gender" value="male"> Male<br/>
+   <input type="radio" name="gender" value="female"> Female<br/>
+   <input type="radio" name="gender" value="other"> Other<br/></p>
+<p>Martial Status:
+ 	<select name="cats" size="multiple">
+    	<option value="Grumpy Cat">Married</option>
+    	<option value="Garfield">Unmarried</option>
+    	<option value="Tom">Divorced</option>
+	</select></p>
+<p>Select the Vehicles you owe: <br/>
+	 <input type="checkbox" name="vehicle1" value="Bike"> I have a bike<br/>
+   <input type="checkbox" name="vehicle2" value="Car"> I have a car<br>
+   <input type="checkbox" name="vehicle3" value="Boat" checked> I have a boat</p>
+<p>Select a file: <input type="file" name="myFile"></p>
+
+<input type="submit" value="submit">
+
+ </fieldset>
+</form>
+
+</body>
+</html>
