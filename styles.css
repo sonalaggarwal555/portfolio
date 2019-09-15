@@ -172,7 +172,7 @@ cursor:pointer;
 }
 input[type=submit]{
 width:100%;
-background-color:#cc9da;
+background-color:#999;
 }
 input[type=text]:focus{
 	background-color:blue;
