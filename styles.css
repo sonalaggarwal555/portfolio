@@ -33,7 +33,6 @@ header{
   padding:5px;
   font-size: 17px;
   width:33.33%;
-  transition: 4s;
 }
 /* CSS TRANSITONS */
 .tablink:hover{
@@ -156,4 +155,41 @@ footer{
   display:flex;
   float:left;
   width:100%;
+}
+/* PAGE-3 CONTACT FORM */
+body{
+  background-color:aliceblue;
+  margin:0;
+}
+button,input,select,textarea{
+	font-family:inherit;
+  font-size:15px;
+  box-sizing: border-box;
+}
+input{
+border-radius:4px;
+cursor:pointer;
+}
+input[type=submit]{
+width:100%;
+background-color:#cc9da;
+}
+input[type=text]:focus{
+	background-color:blue;
+}
+form{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+}
+.checkbox label:hover input ~ .checkmark {
+  background-color: #2196F3;
+  border:1px dotted #999;
+}
+p{
+  margin-top: 2px;
+  margin-bottom: 3px;
+}
+.Optional{
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
