@@ -33,7 +33,7 @@ header{
   padding:5px;
   font-size: 17px;
   width:33.33%;
-  transition: 2s;
+  transition: 4s;
 }
 /* CSS TRANSITONS */
 .tablink:hover{
@@ -69,7 +69,7 @@ header{
   border:1px solid #eaeaea;
   border-radius: 5px;
   box-shadow: 2px 2px 5px 0px #ececec;
-  transition: 2s;
+  transition: 4s;
 }
 /* CSS TRANSITONS */
 .card:hover{

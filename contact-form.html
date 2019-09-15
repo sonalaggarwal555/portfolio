@@ -6,26 +6,42 @@
 </head>
 <style>
 body{
-	display:block;
   background-color:aliceblue;
+  margin:0;
 }
 button,input,select,textarea{
-	font-family:Arial;
+	font-family:inherit;
   font-size:15px;
-  box-sizing:border-box;
+  box-sizing: border-box;
 }
 input{
 border-radius:4px;
+cursor:pointer;
 }
 input[type=submit]{
 width:100%;
 background-color:#cc9da;
 }
-input[type=password]:focus{
-	background-color:#ddd;
-  outline:none;
+input[type=text]:focus{
+	background-color:blue;
 }
-fieldset{
+form{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+}
+.checkbox label:hover input ~ .checkmark {
+  background-color: #2196F3;
+}
+p{
+  margin-top: 2px;
+  margin-bottom: 3px;
+}
+.Optional{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+legend {
+
 }
 </style>
 <body>
@@ -44,30 +60,35 @@ fieldset{
     <a href="contact-form.html" class="tablink" style="background-color:#f44336;">Contact</a>
   </nav>
 
-<form action="/action_page.php">
-<fieldset>
-<legend>Contact Form</legend>
-<p>First name:<input type="text" name="firstname" value=""></p>
-<p>E-mail: <input type="email" name="emailaddress"></p>
-<p>Telephone: <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required></p>
-<p>Date of Birth: <input type="date" name="bday"></p>
-<p>Please select your gender:<br/>
-   <input type="radio" name="gender" value="male"> Male<br/>
-   <input type="radio" name="gender" value="female"> Female<br/>
-   <input type="radio" name="gender" value="other"> Other<br/></p>
-<p>Martial Status:
- 	<select name="cats" size="multiple">
-    	<option value="Grumpy Cat">Married</option>
-    	<option value="Garfield">Unmarried</option>
-    	<option value="Tom">Divorced</option>
-	</select></p>
-<p>Select the Vehicles you owe: <br/>
-	 <input type="checkbox" name="vehicle1" value="Bike"> I have a bike<br/>
-   <input type="checkbox" name="vehicle2" value="Car"> I have a car<br>
-   <input type="checkbox" name="vehicle3" value="Boat" checked> I have a boat</p>
-<p>Select a file: <input type="file" name="myFile"></p>
+    <form method="GET">
+    <fieldset>
+      <legend>Contact Form</legend>
+      <p>First name:<input type="text" name="firstname" value=""></p>
+      <p>E-mail: <input type="email" name="emailaddress"></p>
+      <p>Telephone: <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"></p>
 
-<input type="submit" value="submit">
+    <fieldset>
+      <legend>Optional**</legend>
+      <p class="Optional">Date of Birth: <input type="date" name="bday"></p><br/>
+      <p class="Optional">Please select your gender:<br/>
+         <input type="radio" name="gender" value="male"> Male
+         <input type="radio" name="gender" value="female"> Female
+         <input type="radio" name="gender" value="other"> Other</p><br/>
+      <p class="Optional">Martial Status:
+       	<select name="cats" size="multiple">
+            <option value="None">-- Select --</option>
+          	<option value="Married">Married</option>
+          	<option value="Unmarried">Unmarried</option>
+          	<option value="Divorced">Divorced</option>
+      	</select></p><br/>
+      <p class="Optional">Select the Vehicles you owe: <br/>
+    	 <input type="checkbox" name="vehicle1" value="Bike"> I have a bike<br/>
+       <input type="checkbox" name="vehicle2" value="Car"> I have a car<br/>
+       <input type="checkbox" name="vehicle3" value="Boat"> I have a boat</p><br/>
+      <p>Select a file: <input type="file" name="myFile"></p>
+    </fieldset>
+
+    <input type="submit" value="submit">
 
  </fieldset>
 </form>
